@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Streams - Sportive</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #141414;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #000;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header .logo {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .grid-item {
+      position: relative;
+      background-color: #222;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .grid-item:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+    }
+
+    .grid-item img {
+      width: 100%;
+      border-bottom: 1px solid #444;
+    }
+
+    .grid-item .details {
+      padding: 10px;
+      text-align: center;
+    }
+
+    .details h3 {
+      font-size: 1.2em;
+      margin: 0;
+    }
+
+    .details p {
+      font-size: 0.9em;
+      color: #bbb;
+    }
+
+    .details a {
+      color: #007bff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      font-size: 0.8em;
+      color: #aaa;
+      border-top: 1px solid #444;
+      background-color: #000;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">Sportive</div>
+  </header>
+
+  <div class="grid">
+    <!-- DAZN La Liga 1 -->
+    <div class="grid-item">
+      <img src="C:/Users/Pablo/Documents/ELPLAN DEPORTES/DAZN LA LIGA 1.png" alt="DAZN LA LIGA 1">
+      <div class="details">
+        <h3>DAZN LA LIGA 1</h3>
+        <p>Fútbol · HD · 1080p</p>
+        <a href="acestream://1960a9be8ae9e8c755330218eac4c5805466290a">Ver Ahora</a>
+      </div>
+    </div>
+    <!-- DAZN La Liga 2 -->
+    <div class="grid-item">
+      <img src="C:/Users/Pablo/Documents/ELPLAN DEPORTES/DAZN LA LIGA 2.png" alt="DAZN LA LIGA 2">
+      <div class="details">
+        <h3>DAZN LA LIGA 2</h3>
+        <p>Fútbol · Deportes · HD</p>
+        <a href="acestream://e33e666c393ef04ebe99a9b92135d2e0b48c4d10">Ver Ahora</a>
+      </div>
+    </div>
+    <!-- DAZN F1 -->
+    <div class="grid-item">
+      <img src="C:/Users/Pablo/Documents/ELPLAN DEPORTES/DAZN F1.png" alt="DAZN F1">
+      <div class="details">
+        <h3>DAZN F1</h3>
+        <p>Fórmula 1 · HD</p>
+        <a href="acestream://5789ca155323664edd293b848606688edf803f4d">Ver Ahora</a>
+      </div>
+    </div>
+    <!-- Movistar La Liga -->
+    <div class="grid-item">
+      <img src="C:/Users/Pablo/Documents/ELPLAN DEPORTES/MOVISTAR+ LA LIGA.png" alt="Movistar La Liga">
+      <div class="details">
+        <h3>Movistar La Liga</h3>
+        <p>Fútbol · 1080p</p>
+        <a href="acestream://1969c27658d4c8333ab2c0670802546121a774a5">Ver Ahora</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2024 Sportive - Todos los derechos reservados.
+  </footer>
+</body>
+
+</html>
