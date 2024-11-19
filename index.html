@@ -12,60 +12,125 @@
       background-color: #121212;
       color: #fff;
     }
+
     header {
       background-color: #000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       padding: 20px;
-      text-align: center;
     }
+
     header img {
       width: 150px;
     }
-    main {
-      padding: 20px;
-      text-align: center;
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
     }
-    h1 {
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 1rem;
+    }
+
+    .banner {
+      background-image: url('football-field-background-mqss98m5171er5av.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+    }
+
+    .banner h1 {
+      font-size: 3rem;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .teams-section {
+      padding: 20px;
+    }
+
+    .teams-section h2 {
       font-size: 2rem;
+      text-align: center;
       margin-bottom: 20px;
     }
-    p {
-      font-size: 1.2rem;
-      margin-bottom: 40px;
-    }
-    section {
+
+    .teams-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       gap: 20px;
     }
-    section img {
-      width: 100%;
+
+    .team-card {
+      text-align: center;
+      background-color: #1e1e1e;
       border-radius: 8px;
+      padding: 10px;
     }
+
+    .team-card img {
+      width: 100%;
+      max-width: 150px;
+      margin: 0 auto;
+      display: block;
+    }
+
     footer {
       background-color: #000;
       text-align: center;
       padding: 10px;
-      margin-top: 20px;
+      color: #fff;
     }
   </style>
 </head>
 <body>
   <header>
     <img src="SPORTIVE LOGO.png" alt="Logo de Sportive">
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="streams.html">Streams</a></li>
+        <li><a href="guias.html">Guías</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <main>
-    <h1>Bienvenido a Sportive</h1>
-    <p>Disfruta de los mejores contenidos deportivos en alta definición.</p>
-    <img src="PAGPRINCIPALIMG.png" alt="Imagen principal" style="width: 100%;">
+  <div class="banner">
+    <h1>Noticias de La Liga</h1>
+  </div>
 
-    <section>
-      <h2>Canales Deportivos</h2>
-      <img src="DAZN F1.png" alt="DAZN F1">
-      <img src="MOVISTAR LIGA DE CAMPEONES.png" alt="Movistar Liga de Campeones">
-      <img src="DAZN LA LIGA 1.png" alt="DAZN La Liga 1">
-      <img src="MOVISTAR+ LA LIGA.png" alt="Movistar+ La Liga">
-    </section>
+  <main class="teams-section">
+    <h2>Equipos Destacados</h2>
+    <div class="teams-grid">
+      <div class="team-card">
+        <img src="fcb.png" alt="FC Barcelona">
+        <h3>FC Barcelona</h3>
+      </div>
+      <div class="team-card">
+        <img src="rm.png" alt="Real Madrid">
+        <h3>Real Madrid</h3>
+      </div>
+      <div class="team-card">
+        <img src="atm.png" alt="Atlético de Madrid">
+        <h3>Atlético de Madrid</h3>
+      </div>
+    </div>
   </main>
 
   <footer>

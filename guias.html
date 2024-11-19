@@ -9,52 +9,118 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #121212;
+      background-color: #1d1d1d;
       color: #fff;
     }
+
     header {
       background-color: #000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       padding: 20px;
-      text-align: center;
     }
+
     header img {
       width: 150px;
     }
-    main {
-      padding: 20px;
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 1rem;
+    }
+
+    .hero {
+      background-image: url('https://via.placeholder.com/1920x400');
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       text-align: center;
     }
-    h1 {
-      font-size: 2rem;
-      margin-bottom: 20px;
-    }
-    section img {
-      width: 100%;
-      max-width: 300px;
-      margin: 10px;
+
+    .hero h1 {
+      font-size: 2.5rem;
+      color: #fff;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 10px 20px;
       border-radius: 8px;
     }
+
+    .content {
+      padding: 20px;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+    }
+
+    .guide-card {
+      background-color: #2c2c2c;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .guide-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .guide-card p {
+      font-size: 1rem;
+      color: #ddd;
+    }
+
     footer {
       background-color: #000;
       text-align: center;
       padding: 10px;
-      margin-top: 20px;
     }
   </style>
 </head>
 <body>
   <header>
     <img src="SPORTIVE LOGO.png" alt="Logo de Sportive">
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="streams.html">Streams</a></li>
+        <li><a href="guias.html">Guías</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <main>
+  <div class="hero">
     <h1>Guías de Configuración</h1>
-    <p>Encuentra todo lo necesario para configurar tus dispositivos.</p>
+  </div>
 
+  <main class="content">
     <section>
-      <h2>Guías Destacadas</h2>
-      <img src="FHD.png" alt="Full HD">
-      <img src="pngtree-full-hd-icon-vactor-transparent-png-image_6387758.png" alt="Icono Full HD">
+      <h2>Cómo Configurar Sportive</h2>
+      <div class="guide-card">
+        <h3>Guía 1: Instalación</h3>
+        <p>Paso a paso para instalar Sportive en tu dispositivo.</p>
+      </div>
+      <div class="guide-card">
+        <h3>Guía 2: Configuración de Streaming</h3>
+        <p>Aprende cómo configurar los streams en alta calidad.</p>
+      </div>
     </section>
   </main>
 

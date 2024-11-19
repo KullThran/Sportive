@@ -12,51 +12,159 @@
       background-color: #121212;
       color: #fff;
     }
+
     header {
       background-color: #000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       padding: 20px;
-      text-align: center;
     }
+
     header img {
       width: 150px;
     }
-    main {
-      padding: 20px;
-      text-align: center;
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
     }
-    h1 {
-      font-size: 2rem;
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 1rem;
+    }
+
+    .stream-section {
+      padding: 20px;
+    }
+
+    .stream-section h2 {
+      font-size: 2.5rem;
+      text-align: center;
       margin-bottom: 20px;
     }
-    section img {
-      width: 100%;
-      max-width: 300px;
-      margin: 10px;
-      border-radius: 8px;
+
+    .streams-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
     }
+
+    .stream-card {
+      background-color: #1e1e1e;
+      border-radius: 8px;
+      padding: 15px;
+      text-align: center;
+      position: relative;
+    }
+
+    .stream-card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .stream-card h3 {
+      margin: 10px 0;
+      font-size: 1.5rem;
+    }
+
+    .stream-card .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #ff4500;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      margin-top: 10px;
+      transition: background-color 0.3s ease;
+    }
+
+    .stream-card .button:hover {
+      background-color: #ff0000;
+    }
+
     footer {
       background-color: #000;
       text-align: center;
       padding: 10px;
-      margin-top: 20px;
+      color: #fff;
     }
   </style>
 </head>
 <body>
   <header>
     <img src="SPORTIVE LOGO.png" alt="Logo de Sportive">
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="streams.html">Streams</a></li>
+        <li><a href="guias.html">Guías</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <main>
-    <h1>Streams en Vivo</h1>
-    <p>Explora los mejores streams deportivos.</p>
+  <main class="stream-section">
+    <h2>Streams AceStream</h2>
+    <div class="streams-grid">
+      <!-- Canales con IDs y fotos correctas -->
+      <div class="stream-card">
+        <img src="DAZN_LALIGA_1.png" alt="DAZN La Liga 1">
+        <h3>DAZN La Liga 1</h3>
+        <a class="button" href="acestream://ID_DAZN_LALIGA_1">Abrir en AceStream</a>
+      </div>
+      <div class="stream-card">
+        <img src="DAZN_LALIGA_2.png" alt="DAZN La Liga 2">
+        <h3>DAZN La Liga 2</h3>
+        <a class="button" href="acestream://ID_DAZN_LALIGA_2">Abrir en AceStream</a>
+      </div>
+      <div class="stream-card">
+        <img src="DAZN_F1.png" alt="DAZN F1">
+        <h3>DAZN F1</h3>
+        <a class="button" href="acestream://ID_DAZN_F1">Abrir en AceStream</a>
+      </div>
+      <div class="stream-card">
+        <img src="MOVISTAR_LIGA_CAMPEONES.png" alt="Movistar Liga de Campeones">
+        <h3>Movistar Liga de Campeones</h3>
+        <a class="button" href="acestream://ID_MOVISTAR_LIGA_CAMPEONES">Abrir en AceStream</a>
+      </div>
+      <div class="stream-card">
+        <img src="MOVISTAR_LALIGA.png" alt="Movistar La Liga">
+        <h3>Movistar La Liga</h3>
+        <a class="button" href="acestream://ID_MOVISTAR_LALIGA">Abrir en AceStream</a>
+      </div>
+      <div class="stream-card">
+        <img src="EUROSPORT.png" alt="Eurosport">
+        <h3>Eurosport</h3>
+        <a class="button" href="acestream://ID_EUROSPORT">Abrir en AceStream</a>
+      </div>
+      <div class="stream-card">
+        <img src="NHL.png" alt="NHL">
+        <h3>NHL</h3>
+        <a class="button" href="acestream://ID_NHL">Abrir en AceStream</a>
+      </div>
+      <div class="stream-card">
+        <img src="NBA.png" alt="NBA">
+        <h3>NBA</h3>
+        <a class="button" href="acestream://ID_NBA">Abrir en AceStream</a>
+      </div>
+    </div>
 
-    <section>
-      <h2>Canales Disponibles</h2>
-      <img src="DAZN F1.png" alt="DAZN F1">
-      <img src="MOVISTAR+ LA LIGA.png" alt="Movistar+ La Liga">
-      <img src="DAZN LA LIGA 1.png" alt="DAZN La Liga 1">
-    </section>
+    <h2>Streams Online</h2>
+    <div class="streams-grid">
+      <div class="stream-card">
+        <iframe src="https://www.tarjetarojatvenvivo.pl/2024/copa-de-africa-de-naciones-marruecos-vs-lesoto.php" frameborder="0" width="100%" height="250px"></iframe>
+      </div>
+    </div>
   </main>
 
   <footer>
